@@ -26,3 +26,11 @@
 - [x] Little vs. big endian
 - [ ] Binary search tree
 - [x] Function pointers basics
+
+##Exercise 3
+- [x] Complex numbers
+- [ ] Dynamic memory allocation
+- [ ] wc
+- [ ] File I/O
+- [ ] Function Pointer
+
