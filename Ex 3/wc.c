@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 int main(int argc, char* argv[])
 {
     FILE *fp = NULL;
@@ -31,9 +31,9 @@ int main(int argc, char* argv[])
         nc = nw = nl = 0;
         while ((c = getc(fp)) != EOF)
         {
-            /*TODO:FILL HERE
-             process the file using getc(fp)
-             */
+              if(c == '\n'){nl++;}
+              if (isspace(c)){nw++;}
+              nc++;
         }
         /*print totals*/
         printf("%ld %ld %ld %s\n", nl, nw, nc, currfile);
