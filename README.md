@@ -29,8 +29,8 @@
 
 ##Exercise 3
 - [x] Complex numbers
-- [ ] Dynamic memory allocation
-- [ ] wc
-- [ ] File I/O
+- [x] Dynamic memory allocation
+- [x] wc
+- [x] File I/O
 - [ ] Function Pointer
 
