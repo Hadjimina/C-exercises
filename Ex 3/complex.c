@@ -48,10 +48,24 @@ void print(complex toPrint){
 
 struct complex_set *alloc_set(struct complex c_arr[], int size){
    complex_set *ptr = (complex_set *)malloc(sizeof(complex_set));
-   ptr->num_points_in_set = size;
-   ptr->points = (complex *)malloc(sizeof(complex)*size);
 
-   ptr->points = c_arr;
+
+
+   complex* items = (complex *)malloc(sizeof(complex)*size);
+
+   if (!ptr || !items) {
+     printf("Error allocating set\n");
+     exit(-1);
+   }
+
+   for (size_t i = 0; i < size; i++) {
+ 		items[i] = c_arr[i];
+ 	}
+
+   ptr->points = items;
+
+   ptr->num_points_in_set = size;
+
 
    return ptr;
 
@@ -59,9 +73,8 @@ struct complex_set *alloc_set(struct complex c_arr[], int size){
 
 
 void free_set(struct complex_set *set){
+  free(set->points);
   free(set);
-  //free(set->points);
-
 }
 
 void printSet(complex_set toPrint){
