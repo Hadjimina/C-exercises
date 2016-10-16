@@ -34,3 +34,15 @@
 - [x] File I/O
 - [ ] Function Pointer
 
+##Exericse 4
+###Part 1
+- [ ] Implementing a hash table
+### Part 2
+- [x] Array basics
+- [x] Addresssing modes
+- [x] Arithmetic operations
+- [x] leal and movl
+- [x] Condition codes
+- [x] Reading Condition Codes with C
+
+Reading Condition Codes & Implementing hash table were the only ones where one had to write code. The solution for therest can be found in the file "Sysprog 4.pdf" (however I'm rather unsure about their correctness).
