@@ -37,6 +37,7 @@
 ##Exericse 4
 ###Part 1
 - [ ] Implementing a hash table
+
 ### Part 2
 - [x] Array basics
 - [x] Addresssing modes
